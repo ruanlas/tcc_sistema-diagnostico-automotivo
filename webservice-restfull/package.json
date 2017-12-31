@@ -1,0 +1,21 @@
+{
+  "name": "restful",
+  "version": "1.0.0",
+  "description": "App restful",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "restful",
+    "nodejs"
+  ],
+  "author": "Ruan Silva",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.4",
+    "validator": "^9.1.1"
+  }
+}
