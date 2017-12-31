@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="css/reset.css" rel="stylesheet">
+       <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1 class="text-center">Monitoramento veicular</h1>
+                <form name="pesquisa" class="form-group container">
+                    <div class="row form-group text-center">
+                        <label>Filtrar resultados por: </label>
+                        <select id="select-filtro" class="form-control">
+                            <option value="chassi">Chassi</option>
+                            <option value="modelo">Modelo</option>
+                        </select>
+                    </div>
+                    <div class="row form-group text-center">
+                        <label for="chassi">Informe o <span id="label-input"></span> do veículo: </label>
+                        <input type="text" class="form-control" id="input-filtro">
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block" id="btn-monitorar">Monitorar</button>
+                </form>
+                <h2 class="text-center">Dados do veiculo: <span id="span-chassi"></span></h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Dados da Medição</th>
+                        </tr>
+                        <tr>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>RPM</th>
+                            <th>Velocidade</th>
+                            <th>Tipo de Combustivel</th>
+                            <th>Pressão do Combustivel</th>
+                            <th id="modelo_chassi"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpo-monitoramento">
+        
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
